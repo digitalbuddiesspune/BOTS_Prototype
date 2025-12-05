@@ -6,7 +6,7 @@ export const TopBar = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 text-white text-center py-2.5 sm:py-3 relative overflow-hidden">
+    <div className="bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-700 text-white text-center py-2.5 sm:py-3 relative overflow-hidden">
       {/* Animated background effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer"></div>
       

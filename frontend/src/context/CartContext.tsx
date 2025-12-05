@@ -78,7 +78,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   const getCartTotal = () => {
     return cart.reduce((total, item) => {
-      const price = parseFloat(item.price.replace(/[£,]/g, '')) || 0;
+      if (item.price === 'FREE') return total;
+      const price = parseFloat(item.price.replace(/[₹,]/g, '')) || 0;
       return total + price * item.quantity;
     }, 0);
   };
@@ -101,4 +102,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     </CartContext.Provider>
   );
 };
+
+
+
 

@@ -35,3 +35,6 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
+
+
+

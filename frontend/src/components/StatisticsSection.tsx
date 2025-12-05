@@ -1,8 +1,8 @@
 export const StatisticsSection = () => {
   const stats = [
     {
-      number: '£123+',
-      label: 'Million in Prizes',
+      number: '₹1,291+',
+      label: 'Crore in Prizes',
       icon: '💰',
       color: 'from-orange-500 to-red-500'
     },

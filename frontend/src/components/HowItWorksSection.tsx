@@ -5,7 +5,7 @@ export const HowItWorksSection = () => {
       title: 'Choose Your Competition',
       description: 'Browse our wide selection of amazing prizes and pick the competition you want to enter.',
       icon: '🎯',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-indigo-600 to-blue-600'
     },
     {
       step: '2',
@@ -48,7 +48,7 @@ export const HowItWorksSection = () => {
               key={index}
               className="relative bg-gradient-to-br from-gray-50 to-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
             >
-              <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg shadow-lg">
+              <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg shadow-lg">
                 {item.step}
               </div>
               <div className={`text-4xl sm:text-5xl mb-3 sm:mb-4 bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}>
@@ -61,7 +61,7 @@ export const HowItWorksSection = () => {
                 {item.description}
               </p>
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-orange-500 to-transparent transform -translate-y-1/2" />
+                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-indigo-600 to-transparent transform -translate-y-1/2" />
               )}
             </div>
           ))}

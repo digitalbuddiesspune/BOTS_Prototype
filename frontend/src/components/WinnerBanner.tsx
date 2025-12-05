@@ -14,46 +14,46 @@ export const WinnerBanner = () => {
           <div className="md:flex">
             <div className="md:w-1/2 relative">
               <img
-                src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80"
-                alt="BOTS Winner"
+                src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=400&fit=crop&q=80"
+                alt="Diamond Jewelry Winner"
                 className="w-full h-full object-cover min-h-[200px] sm:min-h-[250px] md:min-h-[300px]"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://via.placeholder.com/800x400?text=Winner';
+                  (e.target as HTMLImageElement).src = 'https://via.placeholder.com/800x400?text=Diamond+Winner';
                 }}
               />
               <div className="absolute top-2 left-2 sm:top-3 sm:left-3 md:top-4 md:left-4 flex flex-col gap-1 sm:gap-2">
-                <span className="bg-orange-500 text-white px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-full text-[10px] sm:text-xs md:text-sm font-bold shadow-lg">
+                <span className="bg-indigo-600 text-white px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-full text-[10px] sm:text-xs md:text-sm font-bold shadow-lg">
                   BOTS WINNER
                 </span>
                 <span className="bg-green-500 text-white px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-full text-[10px] sm:text-xs md:text-sm font-bold shadow-lg">
-                  £40,000 CASH
+                  DIAMOND JEWELRY
                 </span>
               </div>
             </div>
             <div className="md:w-1/2 p-4 sm:p-6 md:p-8 flex flex-col justify-center bg-white">
               <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 leading-tight">
-                BMW X5 XDRIVE30D M SPORT (£78,890) PLUS £40,000 TAX FREE CASH
+                PREMIUM DIAMOND JEWELRY SET (₹42,00,000) PLUS DIAMOND RING COLLECTION
               </h3>
               <p className="text-gray-600 mb-4 sm:mb-5 md:mb-6 text-xs sm:text-sm">
-                Congratulations to our latest winner! Join thousands of others who have won amazing prizes.
+                Congratulations to our latest winner! Join thousands of others who have won exquisite diamond jewelry.
               </p>
             </div>
           </div>
         </div>
 
         <div className="mt-4 sm:mt-6 md:mt-8 text-center">
-          <p className="text-gray-600 mb-2 sm:mb-3 md:mb-4 text-xs sm:text-sm md:text-base">EST. 1999 - £123+ MILLION IN PRIZES</p>
+          <p className="text-gray-600 mb-2 sm:mb-3 md:mb-4 text-xs sm:text-sm md:text-base">EST. 1999 - ₹1,291+ CRORE IN DIAMOND JEWELRY</p>
           <p className="text-gray-800 font-semibold mb-4 sm:mb-5 md:mb-6 text-sm sm:text-base">New winners every week.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
             <button 
               onClick={handleViewAll}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded font-semibold text-sm sm:text-base transition-colors"
+              className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded font-semibold text-sm sm:text-base transition-colors"
             >
               VIEW ALL
             </button>
             <button 
               onClick={handleNextWinner}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded font-semibold text-sm sm:text-base transition-colors"
+              className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded font-semibold text-sm sm:text-base transition-colors"
             >
               NEXT WINNER
             </button>

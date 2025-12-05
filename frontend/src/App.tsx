@@ -58,16 +58,16 @@ function App() {
             <>
               <StatisticsSection />
               <CompetitionSection 
-                title="Featured Competitions" 
+                title="Featured Products" 
                 competitions={featuredCompetitions}
-                columns={3}
+                columns={4}
               />
             </>
           )}
 
           {activeTab === 'daily' && (
             <CompetitionSection 
-              title="Daily Draw" 
+              title="Electronics" 
               competitions={endsTodayCompetitions}
               columns={3}
             />
@@ -75,15 +75,15 @@ function App() {
 
           {activeTab === 'spot' && (
             <CompetitionSection 
-              title="Spot The Ball" 
-              competitions={featuredCompetitions.filter(c => c.title.toLowerCase().includes('spot'))}
+              title="Vehicles" 
+              competitions={featuredCompetitions.filter(c => c.title.toLowerCase().includes('car') || c.title.toLowerCase().includes('audi') || c.title.toLowerCase().includes('bmw') || c.title.toLowerCase().includes('lamborghini') || c.title.toLowerCase().includes('nissan') || c.title.toLowerCase().includes('mini'))}
               columns={3}
             />
           )}
 
           {activeTab === 'instant' && (
             <CompetitionSection 
-              title="Instant Wins" 
+              title="Home & Living" 
               competitions={instantWinsCompetitions}
               columns={2}
             />
@@ -91,7 +91,7 @@ function App() {
 
           {activeTab === 'free' && (
             <CompetitionSection 
-              title="Free Competitions" 
+              title="Free Items" 
               competitions={freeCompetitions}
               columns={2}
             />
@@ -99,7 +99,11 @@ function App() {
 
           {activeTab === 'winners' && (
             <>
-              <WinnerBanner />
+              <CompetitionSection 
+                title="Best Sellers" 
+                competitions={featuredCompetitions.slice(0, 6)}
+                columns={3}
+              />
               <RecentWinnersSection />
             </>
           )}
@@ -108,20 +112,20 @@ function App() {
             <>
               <HowItWorksSection />
               <CompetitionSection 
-                title="Ends Today" 
+                title="New Arrivals" 
                 competitions={endsTodayCompetitions}
                 columns={3}
               />
               <PrizeCategoriesSection />
               <CompetitionSection 
-                title="Ends Tomorrow" 
+                title="Trending Now" 
                 competitions={endsTomorrowCompetitions}
-                columns={3}
+                columns={4}
               />
               <RecentWinnersSection />
               <TestimonialsSection />
               <CompetitionSection 
-                title="Ending Soon" 
+                title="Limited Stock" 
                 competitions={endsSoonCompetitions}
                 columns={4}
               />

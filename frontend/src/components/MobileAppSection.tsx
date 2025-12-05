@@ -8,14 +8,14 @@ export const MobileAppSection = () => {
   };
 
   return (
-    <section className="py-8 sm:py-12 md:py-16 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white">
+    <section className="py-8 sm:py-12 md:py-16 bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-700 text-white">
       <div className="w-full px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="text-center md:text-left">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-5 md:mb-6">
               Play On The Go!
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-7 md:mb-8 text-orange-50">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-7 md:mb-8 text-indigo-50">
               Download our mobile app and never miss a competition. Enter instantly, track your tickets, and get notified when you win!
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
@@ -56,7 +56,7 @@ export const MobileAppSection = () => {
                 }}
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-pink-400 rounded-2xl transform rotate-6 scale-105 opacity-20 -z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-2xl transform rotate-6 scale-105 opacity-20 -z-10"></div>
           </div>
         </div>
       </div>

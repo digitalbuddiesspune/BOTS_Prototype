@@ -2,39 +2,39 @@ export const RecentWinnersSection = () => {
   const winners = [
     {
       name: 'James Wilson',
-      prize: 'Audi R8',
+      prize: 'Diamond Ring',
       date: '2 days ago',
-      image: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=300&fit=crop&q=80'
     },
     {
       name: 'Lisa Anderson',
-      prize: '£5,000 Cash',
+      prize: 'Diamond Necklace',
       date: '5 days ago',
-      image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cf8e66?w=400&h=300&fit=crop&q=80'
     },
     {
       name: 'Robert Taylor',
-      prize: 'Tech Bundle',
+      prize: 'Diamond Bracelet',
       date: '1 week ago',
-      image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=300&fit=crop&q=80'
     },
     {
       name: 'Amanda White',
-      prize: 'BMW M5',
+      prize: 'Diamond Earrings',
       date: '2 weeks ago',
-      image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1603561596112-0d0395e0f0b1?w=400&h=300&fit=crop&q=80'
     },
     {
       name: 'Chris Martinez',
-      prize: '£2,500 Cash',
+      prize: 'Diamond Pendant',
       date: '2 weeks ago',
-      image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=400&h=300&fit=crop&q=80'
     },
     {
       name: 'Jennifer Lee',
-      prize: 'Apple Bundle',
+      prize: 'Diamond Jewelry Set',
       date: '3 weeks ago',
-      image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=300&fit=crop&q=80'
     }
   ];
 
@@ -69,12 +69,16 @@ export const RecentWinnersSection = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    if (winner.prize.toLowerCase().includes('car') || winner.prize.toLowerCase().includes('audi') || winner.prize.toLowerCase().includes('bmw')) {
-                      target.src = 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=300&fit=crop';
-                    } else if (winner.prize.toLowerCase().includes('cash') || winner.prize.toLowerCase().includes('money')) {
-                      target.src = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=300&fit=crop';
+                    if (winner.prize.toLowerCase().includes('ring')) {
+                      target.src = 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=300&fit=crop';
+                    } else if (winner.prize.toLowerCase().includes('necklace') || winner.prize.toLowerCase().includes('pendant')) {
+                      target.src = 'https://images.unsplash.com/photo-1596944924616-7b38e7cf8e66?w=400&h=300&fit=crop';
+                    } else if (winner.prize.toLowerCase().includes('earring')) {
+                      target.src = 'https://images.unsplash.com/photo-1603561596112-0d0395e0f0b1?w=400&h=300&fit=crop';
+                    } else if (winner.prize.toLowerCase().includes('bracelet')) {
+                      target.src = 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=300&fit=crop';
                     } else {
-                      target.src = 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop';
+                      target.src = 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=300&fit=crop';
                     }
                   }}
                   loading="lazy"
